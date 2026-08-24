@@ -25,5 +25,11 @@ function marcarAtualizacao() {
   document.querySelector('#atualizado').textContent = new Date().toLocaleString('pt-BR');
 }
 
+function verificarAlertaCritico(valorAtual, limite) {
+  if (valorAtual > limite) {
+    console.log("ALERTA")
+  }
+}
+
 carregarSensores();
 marcarAtualizacao();
